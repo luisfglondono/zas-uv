@@ -125,7 +125,6 @@ function ProfileSide({}: Props) {
           <Text fontWeight="bold" fontSize="18pt">
             {user?.displayName || user?.email?.split("@")[0]}
           </Text>
-          <Icon as={FaRedditAlien} fontSize="18pt" color="brand.100" />
           <Icon as={GiCheckedShield} fontSize="18pt" color="brand.100" />
         </Flex>
       </Flex>
@@ -149,34 +148,13 @@ function ProfileSide({}: Props) {
         gap={20}
       >
         <Icon as={IoShirtOutline} />
-        Style Your Avatar
+        Estila tu avatar
       </Button>
       <Flex justify="center" gap={20} pt={5} pb={5}>
         <Stack>
           <Stack>
             <Text fontWeight="bold" fontSize="10pt" textAlign="start">
-              Karma
-            </Text>
-            <Text
-              fontWeight="medium"
-              fontSize="9pt"
-              p="auto"
-              display="flex"
-              gap={1}
-            >
-              <Icon
-                as={MdVerified}
-                color="blue.500"
-                textAlign="center"
-                mt="auto"
-                mb="auto"
-              />
-              27,465
-            </Text>
-          </Stack>
-          <Stack>
-            <Text fontWeight="bold" fontSize="10pt" textAlign="start">
-              Followers
+              Seguidores
             </Text>
             <Text
               fontWeight="medium"
@@ -199,7 +177,7 @@ function ProfileSide({}: Props) {
         <Stack>
           <Stack>
             <Text fontWeight="bold" fontSize="10pt" textAlign="start">
-              Cake Day
+              Fecha de creación
             </Text>
             {redditUser?.timestamp && (
               <Text
@@ -223,17 +201,6 @@ function ProfileSide({}: Props) {
           </Stack>
         </Stack>
       </Flex>
-      <Flex width="350px" pr={5} pl={5} gap={5} justify="center">
-        <Icon
-          as={IoRocketSharp}
-          color="brand.100"
-          textAlign="center"
-          m="auto"
-        />
-        <Text textAlign="center" fontSize="9pt">
-          Receives the Rocket Like Award and more in the past 30 days
-        </Text>
-      </Flex>
       <Button
         width={80}
         mt={2}
@@ -246,7 +213,7 @@ function ProfileSide({}: Props) {
         rounded="md"
         onClick={onClick}
       >
-        NEW POST
+        NUEVA PUBLICACIÓN
       </Button>
       <Text
         textAlign="end"
@@ -255,7 +222,6 @@ function ProfileSide({}: Props) {
         color="blue.500"
         fontWeight="bold"
       >
-        More Options
       </Text>
     </Flex>
   );

@@ -35,32 +35,7 @@ const Directory: React.FC = () => {
           width={{ base: "auto", lg: "200px" }}
         >
           <Flex align="center">
-            {directoryState.selectedMenuItem.imageURL ? (
-              <Image
-                src={directoryState.selectedMenuItem.imageURL}
-                borderRadius="full"
-                boxSize="24px"
-                mr={2}
-              />
-            ) : (
-              <>
-                {directoryState.selectedMenuItem.iconColor === "black" ? (
-                  <Icon
-                    fontSize={24}
-                    mr={{ base: 1, md: 2 }}
-                    as={directoryState.selectedMenuItem.icon}
-                    color={iconColor}
-                  />
-                ) : (
-                  <Icon
-                    fontSize={24}
-                    mr={{ base: 1, md: 2 }}
-                    as={directoryState.selectedMenuItem.icon}
-                    color={directoryState.selectedMenuItem.iconColor}
-                  />
-                )}
-              </>
-            )}
+            
 
             <Flex display={{ base: "none", lg: "flex" }}>
               <Text fontWeight={600} fontSize="10pt">

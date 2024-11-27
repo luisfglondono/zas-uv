@@ -29,7 +29,7 @@ const Communities: React.FC<CommunitiesProps> = () => {
 
       <Box mt={3} mb={4}>
         <Text pl={3} mb={1} fontSize="7pt" fontWeight={500} color={textColor}>
-          MODERATING
+          MODERANDO
         </Text>
         {mySnippets
           .filter((item) => item.isModerator)
@@ -47,7 +47,7 @@ const Communities: React.FC<CommunitiesProps> = () => {
 
       <Box mt={3} mb={4}>
         <Text pl={3} mb={1} fontSize="7pt" fontWeight={500} color={textColor}>
-          MY COMMUNITIES
+          MIS SEDES
         </Text>
         <MenuItem
           width="100%"
