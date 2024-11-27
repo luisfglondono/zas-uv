@@ -42,7 +42,6 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
             />
           ) : (
             <Icon
-              as={FaReddit}
               fontSize={64}
               position="relative"
               top={-3}

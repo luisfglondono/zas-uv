@@ -64,7 +64,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                   fontSize={24}
                   mr={1}
                   color="gray.300"
-                  as={FaRedditSquare}
                 />
                 <Flex
                   display={{ base: "none", lg: "flex" }}
@@ -76,10 +75,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ user }) => {
                   <Text fontWeight={700}>
                     {user?.displayName || user?.email?.split("@")[0]}
                   </Text>
-                  <Flex alignItems="center">
-                    <Icon as={IoSparkles} color="brand.100" mr={1} />
-                    <Text color="gray.400">1 karma</Text>
-                  </Flex>
                 </Flex>
               </>
             ) : (

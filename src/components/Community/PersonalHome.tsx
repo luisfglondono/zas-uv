@@ -35,23 +35,23 @@ const PersonalHome: React.FC = () => {
         color="white"
         p="6px 10px"
         bg="blue.500"
-        height="34px"
+        height="60px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/sgf6r5easbh31.jpg)"
+        bgImage="url(/images/admoncentral.jpg)"
         backgroundSize="cover"
+        backgroundPosition={250}
       ></Flex>
       <Flex direction="column" p="12px">
         <Flex align="center" mb={2}>
-          <Icon as={FaReddit} fontSize={50} color="brand.100" mr={2} />
-          <Text fontWeight={600}>Home</Text>
+          <Text fontWeight={600}>Página principal</Text>
         </Flex>
         <Stack spacing={3}>
           <Text fontSize="9pt">
-            Your personal Reddit frontpage, built for you.
+            Página principal, aquí podras ver las publicaciones principales.
           </Text>
-          <Button height="30px">Create Post</Button>
-          <Button
+          <Button height="30px">Crear publicación</Button>
+          {/* <Button
             disabled={!user}
             variant="outline"
             height="30px"
@@ -60,7 +60,7 @@ const PersonalHome: React.FC = () => {
             }}
           >
             Create Community
-          </Button>
+          </Button> */}
         </Stack>
       </Flex>
     </Flex>

@@ -79,12 +79,13 @@ const Recommendation: React.FC = () => {
         height="70px"
         borderRadius="4px 4px 0px 0px"
         fontWeight={600}
-        bgImage="url(/images/recCommsArt.png)"
+        bgImage="url(/images/descarga.png)"
         backgroundSize="cover"
         bgGradient="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
-        url('images/xw6wqhhjubh31.webp')"
+        url('images/descarga.png')"
+        backgroundPosition={300}
       >
-        Top Communities
+        Sedes
       </Flex>
       <Flex direction="column">
         {loading ? (
@@ -133,7 +134,6 @@ const Recommendation: React.FC = () => {
                           />
                         ) : (
                           <Icon
-                            as={FaReddit}
                             fontSize={30}
                             color="brand.100"
                             mr={2}
@@ -169,7 +169,7 @@ const Recommendation: React.FC = () => {
                   isViewAll ? setIsViewAll(false) : setIsViewAll(true)
                 }
               >
-                {isViewAll ? "Collapse Items" : "View All"}
+                {isViewAll ? "Colapsar" : "Ver todos"}
               </Button>
             </Box>
           </>

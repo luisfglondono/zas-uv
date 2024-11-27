@@ -138,7 +138,6 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
                     />
                   ) : (
                     <Icon
-                      as={FaReddit}
                       fontSize={40}
                       color="brand.100"
                       mr={2}

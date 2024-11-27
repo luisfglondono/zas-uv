@@ -143,7 +143,7 @@ function ConversationItem({ user }: Props) {
           </Flex>
         ) : (
           <Flex position="relative">
-            <Icon as={FaReddit} fontSize={40} color="brand.100" mr={2} />
+            <Icon  fontSize={40} color="brand.100" mr={2} />
             <Icon as={BsFillChatDotsFill} position="absolute" top={6} />
           </Flex>
         )}

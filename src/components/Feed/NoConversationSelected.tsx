@@ -13,7 +13,6 @@ function NoConversationSelected({ user }: Props) {
         <Text fontSize={40}>
           {user ? "Select a Conversation" : "You Need To Login"}
         </Text>
-        <IoLogoReddit fontSize={90} />
       </Stack>
     </Flex>
   );

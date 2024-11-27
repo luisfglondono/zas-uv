@@ -193,7 +193,7 @@ const PostItem: React.FC<PostItemProps> = ({
                     mr={2}
                   />
                 ) : (
-                  <Icon as={FaReddit} fontSize="18px" color="blue.500" />
+                  <Icon fontSize="18px" color="blue.500" />
                 )}
                 <Link href={`r/${post.communityId}`}>
                   <Text
@@ -206,7 +206,7 @@ const PostItem: React.FC<PostItemProps> = ({
               </>
             )}
             <Text>
-              Posted by u/{decryptedData.creatorDisplayName}{" "}
+              Publicado por u/{decryptedData.creatorDisplayName}{" "}
               {moment(new Date(post.createdAt?.seconds * 1000)).fromNow()}
             </Text>
           </Stack>
@@ -251,7 +251,7 @@ const PostItem: React.FC<PostItemProps> = ({
           >
             <Icon as={IoArrowRedoOutline} mr={2} color={IconBg} />
             <Text fontSize="9pt" color={IconBg}>
-              Share
+              Compartir
             </Text>
           </Flex>
           <Flex
@@ -263,7 +263,7 @@ const PostItem: React.FC<PostItemProps> = ({
           >
             <Icon as={IoBookmarkOutline} mr={2} color={IconBg} />
             <Text fontSize="9pt" color={IconBg}>
-              Save
+              Guardar
             </Text>
           </Flex>
           {userIsCreator && (
@@ -281,7 +281,7 @@ const PostItem: React.FC<PostItemProps> = ({
                 <>
                   <Icon as={AiOutlineDelete} mr={2} color={IconBg} />
                   <Text fontSize="9pt" color={IconBg}>
-                    Delete
+                    Borrar
                   </Text>
                 </>
               )}

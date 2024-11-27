@@ -56,7 +56,7 @@ const CreatePostLink: React.FC = () => {
       p={2}
       mb={4}
     >
-      <Icon as={FaReddit} fontSize={36} color="gray.300" mr={4} />
+      <Icon fontSize={36} color="gray.300" mr={4} />
       <Input
         placeholder="Create Post"
         fontSize="10pt"

@@ -35,6 +35,7 @@ const Posts: React.FC<PostsProps> = ({ communityData }) => {
         where("communityId", "==", communityData.id),
         orderBy("createdAt", "desc")
       );
+
       const postDocs = await getDocs(postQuery);
       const posts = postDocs.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
 
@@ -43,7 +44,10 @@ const Posts: React.FC<PostsProps> = ({ communityData }) => {
         posts: posts as Post[],
       }));
 
-      //console.log(posts);
+      console.log("imprime")
+
+      console.log(posts);
+      
     } catch (error: any) {
       console.log("get post error", error.message);
     }

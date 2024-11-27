@@ -32,7 +32,7 @@ const SignUp: React.FC = () => {
     if (error) setError("");
 
     if (signUpForm.password !== signUpForm.conformPassword) {
-      setError("Password Do Not Match");
+      setError("Las contraseñas no coinciden");
       return;
     }
 
@@ -65,7 +65,7 @@ const SignUp: React.FC = () => {
       <Input
         required
         name="email"
-        placeholder="Email..."
+        placeholder="Correo..."
         type="email"
         mb={2}
         onChange={onChange}
@@ -87,7 +87,7 @@ const SignUp: React.FC = () => {
       <Input
         required
         name="password"
-        placeholder="Password..."
+        placeholder="Contraseña..."
         type="password"
         mb={2}
         onChange={onChange}
@@ -110,7 +110,7 @@ const SignUp: React.FC = () => {
       <Input
         required
         name="conformPassword"
-        placeholder="Confirm Password..."
+        placeholder="Confirmar contraseña..."
         type="password"
         mb={2}
         onChange={onChange}
@@ -146,10 +146,10 @@ const SignUp: React.FC = () => {
         type="submit"
         isLoading={loading}
       >
-        Sign Up
+        Registrarse
       </Button>
       <Flex fontSize="9pt" justifyContent="center">
-        <Text mr={1}>Already a redditor?</Text>
+        <Text mr={1}>¿Ya tienes cuenta?</Text>
         <Text
           color="blue.500"
           fontWeight={700}
@@ -161,7 +161,7 @@ const SignUp: React.FC = () => {
             }))
           }
         >
-          Log In
+          Iniciar sesión
         </Text>
       </Flex>
     </form>
