@@ -19,6 +19,7 @@
     "@types/safe-json-stringify": "^1.1.2",
     "crypto-js": "^4.1.1",
     "firebase": "^9.9.3",
+    "firebase-admin": "^13.0.1",
     "firebase-functions": "^3.22.0",
     "framer-motion": "^6.5.1",
     "moment": "^2.29.4",
